@@ -1,0 +1,287 @@
+
+%----------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------
+
+\documentclass[landscape,a0paper,fontscale=0.285]{baposter} % Adjust the font scale/size here
+\title{Introdució Aliments (BLW)}
+\author{Magí Andorrà Inglés}
+\usepackage[catalan]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{ccicons}
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tabu}
+\usepackage{amssymb} % Adds new symbols to be used in math mode
+
+\usepackage{booktabs} % Top and bottom rules for tables
+\usepackage{enumitem} % Used to reduce itemize/enumerate spacing
+\usepackage{palatino} % Use the Palatino font
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{multicol} % Required for multiple columns
+\setlength{\columnsep}{1.5em} % Slightly increase the space between columns
+\setlength{\columnseprule}{0mm} % No horizontal rule between columns
+
+\usepackage{tikz} % Required for flow chart
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{shapes,arrows} % Tikz libraries required for the flow chart in the template
+
+\newcommand{\compresslist}{ % Define a command to reduce spacing within itemize/enumerate environments, this is used right after \begin{itemize} or \begin{enumerate}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+}
+
+\definecolor{lightblue}{rgb}{0.145,0.6666,1} % Defines the color used for content box headers
+
+\begin{document}
+
+\begin{poster}
+{
+headerborder=closed, % Adds a border around the header of content boxes
+colspacing=0.8em, % Column spacing
+bgColorOne=white, % Background color for the gradient on the left side of the poster
+bgColorTwo=white, % Background color for the gradient on the right side of the poster
+borderColor=lightblue, % Border color
+headerColorOne=black, % Background color for the header in the content boxes (left side)
+headerColorTwo=lightblue, % Background color for the header in the content boxes (right side)
+headerFontColor=white, % Text color for the header text in the content boxes
+boxColorOne=white, % Background color of the content boxes
+textborder=roundedleft, % Format of the border around content boxes, can be: none, bars, coils, triangles, rectangle, rounded, roundedsmall, roundedright or faded
+eyecatcher=true, % Set to false for ignoring the left logo in the title and move the title left
+headerheight=0.1\textheight, % Height of the header
+headershape=roundedright, % Specify the rounded corner in the content box headers, can be: rectangle, small-rounded, roundedright, roundedleft or rounded
+headerfont=\Large\bf\textsc, % Large, bold and sans serif font in the headers of content boxes
+%textfont={\setlength{\parindent}{1.5em}}, % Uncomment for paragraph indentation
+linewidth=2pt % Width of the border lines around content boxes
+}
+%----------------------------------------------------------------
+%	TÍTULO
+%----------------------------------------------------------------
+{\bf\textsc{Memòria introdució aliments (BLW)}\vspace{0.5em}}
+{\textsc{Memòria introdució d'aliments (BLW) \hspace{12pt}}}
+{Marcar una casella per dia que ha provat l'ingredient}
+
+% Caixes de grups alimenticis
+
+\headerbox{VERDURES}{name=VERDURES,column=0,row=0}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+BRÒQUIL & $\square\square\square$ \\
+ALBERGÍNIA & $\square\square\square$ \\
+MONIATO & $\square\square\square$ \\
+COL & $\square\square\square$ \\
+XAMPINYONS & $\square\square\square$ \\
+XAIOTA & $\square\square\square$ \\
+COLIFLOR & $\square\square\square$ \\
+CEBA & $\square\square\square$ \\
+CARBASSÓ & $\square\square\square$ \\
+CARABASSA & $\square\square\square$ \\
+ESPÀRRECS & $\square\square\square$ \\
+PATATA & $\square\square\square$ \\
+PEBRE & $\square\square\square$ \\
+ALL & $\square\square\square$ \\
+TOMÀQUET & $\square\square\square$ \\
+COGOMBRE & $\square\square\square$ \\
+PORRO & $\square\square\square$ \\
+BOLETS & $\square\square\square$ \\
+PASTANAGA & $\square\square\square$ \\
+MONGETA TENDRA & $\square\square\square$ \\
+BLEDES (+12M) & $\square\square\square$ \\
+ESPINACS (+12M) & $\square\square\square$ \\
+REMOLATXA (+12M) & $\square\square\square$ \\
+API (+12M) & $\square\square\square$ \\
+KALE (+12M) & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{FRUITES}{name=FRUITES,column=1,row=0}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+NABIUS & $\square\square\square$ \\
+ALBERCOC & $\square\square\square$ \\
+ALVOCAT & $\square\square\square$ \\
+CAQUI & $\square\square\square$ \\
+PRUNA & $\square\square\square$ \\
+CIRERES & $\square\square\square$ \\
+GROSELLES & $\square\square\square$ \\
+GRANADA & $\square\square\square$ \\
+GUAIABA & $\square\square\square$ \\
+PLÀTAN & $\square\square\square$ \\
+PLATERINA & $\square\square\square$ \\
+SÍNDRIA & $\square\square\square$ \\
+LLIMONA & $\square\square\square$ \\
+POMA & $\square\square\square$ \\
+TARONJA & $\square\square\square$ \\
+MANDARINA & $\square\square\square$ \\
+PRÉSSEC & $\square\square\square$ \\
+MARACUJÀ & $\square\square\square$ \\
+MANGO & $\square\square\square$ \\
+MELÓ & $\square\square\square$ \\
+NISPERS & $\square\square\square$ \\
+NECTARINES & $\square\square\square$ \\
+ARANJA & $\square\square\square$ \\
+PINYA & $\square\square\square$ \\
+PERA & $\square\square\square$ \\
+PAPAIA & $\square\square\square$ \\
+MADUIXES & $\square\square\square$ \\
+KIWI & $\square\square\square$ \\
+FIGUES & $\square\square\square$ \\
+RAÏMS & $\square\square\square$ \\
+COCO & $\square\square\square$ \\
+DÀTILS & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{CEREALS}{name=CEREALS,below=VERDURES, column=0,row=0}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+PA & $\square\square\square$ \\
+PASTA & $\square\square\square$ \\
+CIVADA & $\square\square\square$ \\
+ARRÒS & $\square\square\square$ \\
+CUSCUS & $\square\square\square$ \\
+SÈGOL & $\square\square\square$ \\
+ORDI & $\square\square\square$ \\
+BLAT & $\square\square\square$ \\
+BLAT DE MORO & $\square\square\square$ \\
+QUINOA & $\square\square\square$ \\
+MILL & $\square\square\square$ \\
+KAMUT & $\square\square\square$ \\
+TEF & $\square\square\square$ \\
+BLAT SARRAÍ & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{LLEGUMS}{name=LLEGUMS,below=FRUITES,column=1,row=0,bottomaligned=CEREALS}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+LLENTIES & $\square\square\square$ \\
+CIGRONS & $\square\square\square$ \\
+PÈSOLS & $\square\square\square$ \\
+MONGETES & $\square\square\square$ \\
+FAVES & $\square\square\square$ \\
+GARROFA & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{PEIXOS}{name=PEIXOS,column=2,row=0}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+ARENGADA & $\square\square\square$ \\
+ANXOVA & $\square\square\square$ \\
+BACALLÀ & $\square\square\square$ \\
+BONÍTOL & $\square\square\square$ \\
+CAVALLA & $\square\square\square$ \\
+ORADA & $\square\square\square$ \\
+LLUÇ & $\square\square\square$ \\
+LUBINA & $\square\square\square$ \\
+LLENGUAT & $\square\square\square$ \\
+SALMÓ & $\square\square\square$ \\
+SARDINES & $\square\square\square$ \\
+TRUITA DE RIU & $\square\square\square$ \\
+RAP & $\square\square\square$ \\
+TURBOT & $\square\square\square$ \\
+BRUIXA & $\square\square\square$ \\
+SORELL & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{MARISCS (sense cap)}{name=MARISCS,below=PEIXOS, column=2,row=0}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+CLOÏSSES & $\square\square\square$ \\
+ESCOPINYES & $\square\square\square$ \\
+CAMARÓ & $\square\square\square$ \\
+CALAMARS & $\square\square\square$ \\
+GAMBES & $\square\square\square$ \\
+LLAGOSTÍ & $\square\square\square$ \\
+MUSCLOS & $\square\square\square$ \\
+POP & $\square\square\square$ \\
+SÍPIA & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{FRUITS SECS}{name=FRUITSSECS,below=MARISCS,column=2,row=0,bottomaligned=CEREALS}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+AMETLLES & $\square\square\square$ \\
+AVELLANES & $\square\square\square$ \\
+ANACARDS & $\square\square\square$ \\
+CACAUETS & $\square\square\square$ \\
+CASTANYES & $\square\square\square$ \\
+NOUS & $\square\square\square$ \\
+PISTATXOS & $\square\square\square$ \\
+PINYONS & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{CARNS}{name=CARNS,column=3,row=0}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+POLLASTRE & $\square\square\square$ \\
+GALL D’INDI & $\square\square\square$ \\
+VEDELLA & $\square\square\square$ \\
+CONILL & $\square\square\square$ \\
+PORC & $\square\square\square$ \\
+CABRA & $\square\square\square$ \\
+ÀNEC & $\square\square\square$ \\
+OVELLA & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{OU}{name=OU,below=CARNS, column=3,row=0}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+Si s'introdueix junt: & \\
+TRUITA o OU DUR  & $\square\square\square$ \\
+Si s'introdueix per separat: & \\
+Dia 1: 1/4 rovell  & $\square$ \\
+Dia 2: 1/2 rovell  & $\square$ \\
+Dia 3: 3/4 rovell  & $\square$ \\
+Dia 4: rovell sencer & $\square$ \\
+Dia 5: 1/4 clara  & $\square$ \\
+Dia 6: 1/2 clara  & $\square$ \\
+Dia 7: 3/4 clara  & $\square$ \\
+Dia 8: clara sencera & $\square$ \\
+Dia 9: TRUITA o OU DUR & $\square$ \\
+\end{tabular}
+
+}
+
+\headerbox{ESPÈCIES I ALTRES}{name=ESPECIES,below=OU,column=3,row=0,bottomaligned=CEREALS}{
+
+\begin{tabular}{p{0.7\textwidth}p{0.1\textwidth}}
+OLI D'OLIVA & $\square\square\square$ \\
+ALFÀBREGA & $\square\square\square$ \\
+ANET & $\square\square\square$ \\
+JULIVERT & $\square\square\square$ \\
+CANYELLA & $\square\square\square$ \\
+COMÍ & $\square\square\square$ \\
+CEBOLLÍ & $\square\square\square$ \\
+CURRY & $\square\square\square$ \\
+CARDAMOMO & $\square\square\square$ \\
+CÚRCUMA & $\square\square\square$ \\
+RÚCULA & $\square\square\square$ \\
+ORENGÀ & $\square\square\square$ \\
+PIMENTÓ & $\square\square\square$ \\
+PEBRE & $\square\square\square$ \\
+NOU MOSCADA & $\square\square\square$ \\
+LLORER & $\square\square\square$ \\
+\end{tabular}
+
+}
+
+\end{poster}
+\end{document}
